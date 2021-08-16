@@ -3,12 +3,12 @@
   const second =1000, minute = second * 60, hour = minute *60, day = hour *24;
 
   let myBirthday  = "August, 2021 16:00:00",
-    countown = new Date(myBirthday).getTime(),
+    countdown = new Date(myBirthday).getTime(),
     x = setInterval(function(){
       let nowTime = new Date().getTime(),
         distanceToBirthday = countdown - nowTime;
 
-        document.getElementById('days').innerText = Math.floor(distanceToBirthday/(day));
+      document.getElementById('days').innerText = Math.floor(distanceToBirthday/(day));
       document.getElementById('hours').innerText = Math.floor((distanceToBirthday%(day)) /(hour));
       document.getElementById('hours').innerText = Math.floor((distanceToBirthday%(hour)) /(minute));
       document.getElementById('hours').innerText = Math.floor((distanceToBirthday%(minute)) /(second));
