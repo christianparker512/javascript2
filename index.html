@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +8,12 @@
 </head>
 
 <body>
-  <script src="js/index.js"></script>
+
 <!--  innerHTML, document.write(), window.alert(), console.log()-->
   <p id="yes"></p>
+  <p>Another p tag here</p>
+  <script>
+    document.getElementById("yes").innerHTML="This is the paragraph";
+  </script>
 </body>
 </html>
