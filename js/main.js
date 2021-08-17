@@ -10,8 +10,8 @@
 
       document.getElementById('days').innerText = Math.floor(distanceToBirthday/(day));
       document.getElementById('hours').innerText = Math.floor((distanceToBirthday%(day)) /(hour));
-      document.getElementById('hours').innerText = Math.floor((distanceToBirthday%(hour)) /(minute));
-      document.getElementById('hours').innerText = Math.floor((distanceToBirthday%(minute)) /(second));
+      document.getElementById('minute').innerText = Math.floor((distanceToBirthday%(hour)) /(minute));
+      document.getElementById('second').innerText = Math.floor((distanceToBirthday%(minute)) /(second));
 
       console.log(distanceToBirthday);
 
