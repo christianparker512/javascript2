@@ -13,6 +13,9 @@
   <p id="yes"></p>
   <p>Another p tag here</p>
   <script>
+    var x;
+    x = "4" + 2 + 3;
+    console.log(parseInt(x));
     // This is an inline version of javascript that you will call by getElementById
     document.getElementById("yes").innerHTML="This is the paragraph";
     // This will write what is in the parenthesises
@@ -20,6 +23,12 @@
     window.alert('yesterday was my birthday')
     console.log("we can see what's happening behind the curtain")
 
+    var x = 3;
+    {
+      let x = 4
+      console.log(x);
+    }
+    console.log(x);
   </script>
 </body>
 </html>
