@@ -13,18 +13,39 @@
   <p id="yes"></p>
   <p>Another p tag here</p>
   <script>
-    var myString = "This is our \"text\"";
-    // template literal when using string
-    var myString2 = `That's a very good thing`;
-    var myS = "this is another text";
 
-    // console.log(myString);
-    // console.log(myString2);
-    // You can use a useful method with strings. Below will tell how long it is
-    console.log(myString2.length)
-    console.log(myString2.indexOf('very'));
-    console.log(myString2.slice(15));
-    console.log(myString2.replace("good","bad"));
+    function ourConvert(a,b){
+
+      return a *b;
+
+    }
+
+    var myArray = new Array('mango', 'bananas', 'oranges');
+    var myArray2 = new Array('brussel sprouts', 'carrots', 'cauliflower');
+    document.getElementById('yes').innerHTML = myArray[1];
+    //removes the last
+    myArray.pop();
+    //removes the first
+    myArray.shift();
+    //adds an item to the front
+    myArray.unshift('apples');
+    //adds two arrays together
+    var newA = myArray.concat(myArray2);
+    // var myString = "This is our \"text\"";
+    // // template literal when using string
+    // var myString2 = `That's a very good thing`;
+    // var myS = "this is another text";
+    //
+    // var n = 567;
+    // // n.toExponential(2);
+    // // console.log(myString);
+    // // console.log(myString2);
+    // // You can use a useful method with strings. Below will tell how long it is
+    // console.log(myString2.length)
+    // console.log(myString2.indexOf('very'));
+    // console.log(myString2.slice(15));
+    // console.log(myString2.replace("good","bad"));
+    // console.log( n.toString(2));
 
     // var x;
     // x = "4" + 2 + 3;
@@ -57,7 +78,10 @@
     // console.log(typeof y);
     // console.log(typeof myObj);
     // console.log(typeof myArray);
+    // console.log(myArray);
+    // console.log(newA);
 
+    console.log(ourConvert(5,4))
   </script>
 </body>
 </html>
