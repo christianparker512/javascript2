@@ -14,11 +14,14 @@
   <p>Another p tag here</p>
   <script>
 
-    function ourConvert(a,b){
+    // function ourConvert(a,b){
+    //   return a *b;
+    // }
+    const c = (a,b)=> a+b;
 
-      return a *b;
-
-    }
+    var s = c(4,5);
+    var d = document.getElementById('yes').innerHTML = c(7,9);
+    console.log('The sum is ', s);
 
     var myArray = new Array('mango', 'bananas', 'oranges');
     var myArray2 = new Array('brussel sprouts', 'carrots', 'cauliflower');
@@ -81,7 +84,7 @@
     // console.log(myArray);
     // console.log(newA);
 
-    console.log(ourConvert(5,4))
+    console.log(c(5,4))
   </script>
 </body>
 </html>
