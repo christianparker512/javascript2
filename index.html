@@ -110,10 +110,35 @@
     // } else if (x<y){
     //   document.getElementById('yes').innerHTML = "Y is greater than X";
     // }
-
+    //*************ternary operator
     // or you can use a ternary operator
     (x>y) ? document.getElementById('yes').innerHTML = "X is greater than Y" : document.getElementById('yes').innerHTML = "Y is greater than x";
     console.log(c(5,4))
+
+
+    // **** switch statements
+    var z =5;
+    switch(z){
+      case z > 2:
+        document.getElementById('yes').innerHTML = "z is greater than 2";
+        break;
+      case z =5:
+        console.log('yesssss');
+        break;
+      case z <4:
+        console.log('no');
+        break;
+      default:
+        console.log('whatever');
+        break;
+    }
+
+    msg = "";
+    var i;
+    for (i=0; i<20;i++){
+      msg +="You add " + i + "<br>";
+    }
+    document.getElementById('yes').innerHTML= msg;
   </script>
 </body>
 </html>
