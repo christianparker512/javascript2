@@ -34,6 +34,18 @@
     myArray.unshift('apples');
     //adds two arrays together
     var newA = myArray.concat(myArray2);
+
+    var fruit = {
+      name: "Mango",
+      color: "yellow",
+      id: "123",
+      msg: function(){
+        return "My" + this.name + " is " + this.color;
+      }
+    }
+    console.log(fruit);
+    console.log(fruit.name);
+    console.log(fruit.msg)
     // var myString = "This is our \"text\"";
     // // template literal when using string
     // var myString2 = `That's a very good thing`;
