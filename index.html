@@ -139,6 +139,29 @@
       msg +="You add " + i + "<br>";
     }
     document.getElementById('yes').innerHTML= msg;
+
+
+    //for in and for of loops
+    var veggies = {
+      name: "cauliflower",
+      color: "white",
+      price: 2.48
+    }
+    var v;
+    vegbasket = "";
+    for (v in veggies){
+      vegbasket += veggies[v] + " ";
+    }
+
+    document.getElementById('yes').innerHTML = vegbasket;
+
+    var comment = "";
+    var e = 0;
+    while (e <= 10){
+      comment += " Count " + e;
+      e++;
+    }
+    document.getElementById('yes').innerHTML = comment;
   </script>
 </body>
 </html>
