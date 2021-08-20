@@ -10,10 +10,19 @@
 <body>
 
 <!--  innerHTML, document.write(), window.alert(), console.log()-->
-  <p id="yes"></p>
-  <p>Another p tag here</p>
-  <script>
 
+
+  <form action="">
+    <input type="text" id="ourText" name="our">
+  </form>
+  <p id="yes"></p>
+  <p id="len"></p>
+  <script>
+    var theInput = document.getElementById('ourText');
+    theInput.onkeyup = function(){
+      document.getElementById('yes').innerHTML =theInput.value;
+      document.getElementById('len').innerHTML =theInput.value.length;
+    }
     // function ourConvert(a,b){
     //   return a *b;
     // }
@@ -95,7 +104,15 @@
     // console.log(typeof myArray);
     // console.log(myArray);
     // console.log(newA);
+    let x = 10, y = 20;
+    // if (x > y){
+    //   document.getElementbyId('yes').innerHTML = "X is greater than y"
+    // } else if (x<y){
+    //   document.getElementById('yes').innerHTML = "Y is greater than X";
+    // }
 
+    // or you can use a ternary operator
+    (x>y) ? document.getElementById('yes').innerHTML = "X is greater than Y" : document.getElementById('yes').innerHTML = "Y is greater than x";
     console.log(c(5,4))
   </script>
 </body>
